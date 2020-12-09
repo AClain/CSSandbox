@@ -1,0 +1,87 @@
+.badge {
+  height: 125px;
+  width: 125px;
+  position: relative;
+  margin: 15px 0px;
+}
+
+.badge-img-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.man-1 {
+  background-image: url("/assets/imgs/badge/man_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.man-2 {
+  background-image: url("/assets/imgs/badge/man_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.man-3 {
+  background-image: url("/assets/imgs/badge/man_3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.woman-1 {
+  background-image: url("/assets/imgs/badge/woman_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.badge-pin {
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: solid 5px var(--white);
+}
+
+.online {
+  background-color: #54e346;
+}
+
+.away {
+  background-color: #ffa62b;
+}
+
+.offline {
+  background-color: #a20a0a;
+}
+
+.mini-badge {
+  position: relative;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-right: -25px;
+  border: solid 5px var(--white);
+}
+
+.mini-badge:nth-child(1) {
+  z-index: 4;
+}
+
+.mini-badge:nth-child(2) {
+  z-index: 3;
+}
+
+.mini-badge:nth-child(3) {
+  z-index: 2;
+}
+
+.mini-badge:nth-child(4) {
+  z-index: 1;
+}

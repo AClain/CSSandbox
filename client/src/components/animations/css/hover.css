@@ -1,0 +1,205 @@
+button {
+  color: inherit;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hover-container {
+  text-align: center;
+  display: block;
+  margin: 25px 0px !important;
+}
+
+/* Underline */
+
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline::after {
+  height: 3px;
+  background-color: var(--darkblue);
+  transition: all 0.3s;
+}
+
+.hover-underline-left::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+}
+
+.hover-underline-left:hover::after {
+  width: 100%;
+}
+
+.hover-underline-middle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0%;
+}
+
+.hover-underline-middle:hover::after {
+  width: 50%;
+}
+
+.hover-underline-right::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+}
+
+.hover-underline-right:hover::after {
+  width: 100%;
+}
+
+/* Background */
+
+.hover-background {
+  position: relative;
+  z-index: 1;
+  padding: 10px 15px;
+  transition: all 0.3s;
+}
+
+.hover-background:hover {
+  color: var(--darkblue);
+  color: var(--white);
+}
+
+.hover-background-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--darkblue);
+  height: 100%;
+  width: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.hover-background-bottom:hover::after {
+  transform: scaleY(1);
+}
+
+.hover-background-top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--darkblue);
+  height: 100%;
+  width: 100%;
+  transform: scaleY(0);
+  transform-origin: top center;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.hover-background-top:hover::after {
+  transform: scaleY(1);
+}
+
+.hover-background-middle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--darkblue);
+  height: 100%;
+  width: 100%;
+  transform: scaleY(0);
+  transform-origin: center;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.hover-background-middle:hover::after {
+  transform: scaleY(1);
+}
+
+.hover-background-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--darkblue);
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.hover-background-left:hover::after {
+  width: 100%;
+}
+
+.hover-background-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--darkblue);
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.hover-background-right:hover::after {
+  width: 100%;
+}
+
+/* Scale */
+
+.hover-scale {
+  background-color: var(--white);
+  padding: 15px 35px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in;
+}
+
+.hover-scale:hover {
+  transform: scale(1.1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* Button */
+
+.hover-button {
+  color: #222831;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 15px 25px;
+}
+
+.hover-button-gradient {
+  background-image: linear-gradient(
+    to right,
+    #fefb01,
+    #cefb02,
+    #87fa00,
+    #3af901,
+    #3af901
+  );
+  background-size: 200%;
+  background-position: left;
+  transition: all 1s;
+}
+
+.hover-button-gradient:hover {
+  background-position: right;
+}

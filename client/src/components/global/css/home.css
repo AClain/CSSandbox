@@ -1,0 +1,23 @@
+#home-title {
+  font-size: 48px;
+}
+
+.home-list-title {
+  font-size: 24px;
+  font-family: "RobotoBold";
+  color: #eb4559;
+}
+
+.home-link {
+  position: relative;
+  display: block;
+  width: max-content;
+  transition: all 0.1s ease-in;
+  font-family: "RobotoLight";
+  font-size: 22px;
+}
+
+.home-link:hover {
+  padding-left: 10px;
+  border-left: solid 5px #eb4559;
+}

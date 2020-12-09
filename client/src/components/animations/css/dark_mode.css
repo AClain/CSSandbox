@@ -1,0 +1,93 @@
+#toggle {
+  position: relative;
+  width: 85px;
+  height: 45px;
+  background-color: var(--lightgrey);
+  border-radius: 35px;
+  padding: 5px;
+  transition: all 0.2s ease-in;
+}
+
+#toggle.active {
+  background-color: #28abb9;
+}
+
+#toggle:hover {
+  cursor: pointer;
+}
+
+#slider {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  background-color: var(--white);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 45px; /* toggle width - (slider width + padding) */
+  transition: all 0.2s ease-in;
+}
+
+#slider.active {
+  right: 5px;
+}
+
+#form {
+  margin-top: 25px;
+  width: 650px;
+  height: auto;
+  border: solid 1px var(--lightgrey);
+  padding: 15px 35px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#form.light {
+  background-color: #fff;
+  color: var(--darkblue);
+}
+
+#form.dark {
+  background-color: var(--darkblue);
+  color: #fff;
+}
+
+.form-box {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 25px;
+}
+
+.form-label {
+  display: block;
+  width: 100%;
+  font-style: italic;
+  font-family: "RobotoLight";
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.form-input {
+  position: relative;
+  border: none;
+  padding: 10px;
+  color: var(--darkblue);
+  background-color: var(--white);
+}
+
+.form-input:focus {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#form-submit {
+  background-color: #005c78;
+  color: var(--white);
+  padding: 10px 35px;
+  border-radius: 5px;
+  transition: all 0.1s ease-in;
+}
+
+#form-submit:hover {
+  background-color: #0094c1;
+  cursor: pointer;
+}

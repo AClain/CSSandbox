@@ -1,0 +1,55 @@
+#tabs-container {
+  width: 650px;
+  height: 450px;
+  overflow: auto;
+  background-color: var(--white);
+  border: solid 1px var(--blue);
+}
+
+#tabs-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100px;
+  width: 100%;
+  background-color: var(--blue);
+}
+
+.tabs-button {
+  height: 100%;
+  padding: 0px 25px;
+}
+
+.tabs-button.active {
+  background-color: var(--lightblue);
+}
+
+#tabs-content {
+  padding: 0px 25px;
+}
+
+.tabs {
+  display: none;
+  transition: all 0.2s ease-in;
+}
+
+.tab-title {
+  font-size: 44px;
+  font-family: "RobotoLight";
+}
+
+.tabs.active {
+  display: block;
+  animation: fade 0.6s;
+}
+
+@keyframes fade {
+  from {
+    padding-top: 20px;
+    opacity: 0;
+  }
+  to {
+    padding-top: 0px;
+    opacity: 1;
+  }
+}

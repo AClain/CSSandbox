@@ -1,0 +1,53 @@
+.button-container {
+  position: relative;
+  padding: 25px 35px;
+  text-transform: uppercase;
+  font-family: "RobotoLight";
+}
+
+.button {
+  position: relative;
+  visibility: hidden;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+.button-background-1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  background-color: #ffce4e;
+  transition: all 0.2s ease-in;
+  z-index: 999;
+}
+
+.button,
+.button-background-1 {
+  font-size: 44px;
+}
+
+.button-background-2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: -20%;
+  right: -15%;
+  background-color: var(--darkblue);
+  transition: all 0.2s ease-in;
+  z-index: 99;
+}
+
+.button-container:hover > .button-background-1 {
+  bottom: -20%;
+  right: -15%;
+  background-color: var(--darkblue);
+  color: #ffce4e;
+}
+
+.button-container:hover > .button-background-2 {
+  bottom: 0;
+  right: 0;
+  background-color: #ffce4e;
+}

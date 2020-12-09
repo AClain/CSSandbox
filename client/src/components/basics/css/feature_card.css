@@ -1,0 +1,53 @@
+.feature-card {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 25px auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.feature-color {
+  height: 7px;
+  width: 100%;
+}
+
+.feature-red {
+  background-color: #a20a0a;
+}
+
+.feature-blue {
+  background-color: #07689f;
+}
+
+.feature-yellow {
+  background-color: #fecd1a;
+}
+
+.feature-lightblue {
+  background-color: #4e89ae;
+}
+
+.feature-info {
+  padding: 0px 50px;
+}
+
+.feature-title {
+  font-size: 28px;
+  font-family: "RobotoBold";
+}
+
+.feature-description {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--grey);
+}
+
+.feature-icon {
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  width: 75px;
+}

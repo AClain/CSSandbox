@@ -1,0 +1,63 @@
+.pricing-card {
+  width: 300px;
+  height: 450px;
+  background-color: var(--darkblue);
+  border-radius: 10px;
+  color: var(--white);
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.best-value {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.pricing-name {
+  font-family: "RobotoLight";
+  font-size: 18px;
+}
+
+.pricing-price {
+  font-family: "RobotoBold";
+  font-size: 48px;
+  margin-top: 0;
+}
+
+.pricing-spec {
+  margin: 0;
+  padding: 15px 0px;
+  border-top: solid 1px var(--lightgrey);
+  width: 75%;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.pricing-spec:last-child {
+  border-bottom: solid 1px var(--lightgrey);
+}
+
+.pricing-button {
+  margin-top: 50px;
+  border: solid 1px var(--white);
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 12px 65px;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in;
+  font-family: "RobotoBold";
+  font-size: inherit;
+}
+
+.best-value .pricing-button {
+  border: solid 1px var(--white);
+  background-color: var(--darkblue);
+  color: var(--white);
+}
+
+.pricing-button:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  border: solid 1px var(--blue);
+  color: var(--blue);
+}
