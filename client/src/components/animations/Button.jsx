@@ -5,11 +5,13 @@ import {
 } from '@material-ui/core';
 
 import './css/button.css';
+import Back from '../global/Back';
 
 export default function Button() {
     return (
         <Grid container justify='center'>
             <Grid item xs={10} className="main-container">
+                <Back />
                 <h1>Button</h1>
                 <Grid container justify='center'>
                     <div className="button-container">

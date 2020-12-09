@@ -25,6 +25,7 @@ import Profile from '../components/basics/Profile';
 import Pricing from '../components/basics/Pricing';
 import FeatureCard from '../components/basics/FeatureCard';
 import Tabs from '../components/basics/Tabs';
+import Borders from '../components/basics/Borders';
 
 function Routes(props) {
     return (
@@ -48,6 +49,7 @@ function Routes(props) {
                 <Route exact path='/basics/pricing' component={Pricing} />
                 <Route exact path='/basics/feature-card' component={FeatureCard} />
                 <Route exact path='/basics/tabs' component={Tabs} />
+                <Route exact path='/basics/borders' component={Borders} />
                 <Route path='*'>
                     <Redirect to='/home' />
                 </Route>

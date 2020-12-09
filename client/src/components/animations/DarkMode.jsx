@@ -5,6 +5,7 @@ import {
 } from '@material-ui/core';
 
 import './css/dark_mode.css';
+import Back from '../global/Back';
 
 export default function DarkMode() {
     const [toggle, setToggle] = useState(false);
@@ -16,6 +17,7 @@ export default function DarkMode() {
     return (
         <Grid container justify='center'>
             <Grid item xs={10} className='main-container'>
+                <Back />
                 <h1>Dark Mode</h1>
                 <Grid container direction='column' alignItems='center'>
                     <div id='toggle' onClick={() => { switchToggle() }} className={toggle ? 'active' : ''}>

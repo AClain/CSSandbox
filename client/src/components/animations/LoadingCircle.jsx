@@ -5,11 +5,13 @@ import {
 } from '@material-ui/core';
 
 import './css/loading_circle.css';
+import Back from '../global/Back';
 
 export default function LoadingCircle() {
     return (
         <Grid container justify='center'>
             <Grid item xs={10} className="main-container">
+                <Back />
                 <h1>Loading Circle</h1>
                 <div className="loading-container">
                     <div className="first-circle"></div>

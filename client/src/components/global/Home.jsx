@@ -35,6 +35,7 @@ export default function Home() {
                     <Link className="home-link" to='/basics/pricing'>Pricing Card</Link>
                     <Link className="home-link" to='/basics/feature-card'>Feature Card</Link>
                     <Link className="home-link" to='/basics/tabs'>Tabs</Link>
+                    <Link className="home-link" to='/basics/borders'>Borders</Link>
                 </div>
             </Grid>
         </Grid>

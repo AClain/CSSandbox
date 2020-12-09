@@ -5,11 +5,13 @@ import {
 } from '@material-ui/core';
 
 import './css/pricing.css';
+import Back from '../global/Back';
 
 export default function Pricing() {
     return (
         <Grid container justify='center'>
             <Grid item xs={10} className="main-container">
+                <Back />
                 <h1>Pricing Cards</h1>
                 <h2>Single</h2>
                 <Grid container justify='center'>

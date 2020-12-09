@@ -5,6 +5,7 @@ import {
 } from '@material-ui/core';
 
 import './css/tabs.css';
+import Back from '../global/Back';
 
 export default function Tabs() {
     const [currentTab, setCurrentTab] = useState(0);
@@ -12,12 +13,13 @@ export default function Tabs() {
     return (
         <Grid container justify='center'>
             <Grid item xs={10} className='main-container'>
+                <Back />
                 <h1>Tabs</h1>
                 <Grid container justify='center'>
                     <div id='tabs-container'>
                         <header id='tabs-header'>
                             <button className={`tabs-button ${currentTab === 0 ? 'active' : ''}`} onClick={() => { setCurrentTab(0) }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dashboard" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f1f1f1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-dashboard" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#f1f1f1" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <circle cx="12" cy="13" r="2" />
                                     <line x1="13.45" y1="11.55" x2="15.5" y2="9.5" />
@@ -25,14 +27,14 @@ export default function Tabs() {
                                 </svg>
                             </button>
                             <button className={`tabs-button ${currentTab === 1 ? 'active' : ''}`} onClick={() => { setCurrentTab(1) }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f1f1f1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-settings" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#f1f1f1" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
                                     <circle cx="12" cy="12" r="3" />
                                 </svg>
                             </button>
                             <button className={`tabs-button ${currentTab === 2 ? 'active' : ''}`} onClick={() => { setCurrentTab(2) }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-edit" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f1f1f1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-edit" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#f1f1f1" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M9 7h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
                                     <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
@@ -40,7 +42,7 @@ export default function Tabs() {
                                 </svg>
                             </button>
                             <button className={`tabs-button ${currentTab === 3 ? 'active' : ''}`} onClick={() => { setCurrentTab(3) }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-history" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f1f1f1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-history" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#f1f1f1" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <polyline points="12 8 12 12 14 14" />
                                     <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />

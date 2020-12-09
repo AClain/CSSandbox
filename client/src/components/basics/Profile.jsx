@@ -5,11 +5,13 @@ import {
 } from '@material-ui/core';
 
 import './css/profile.css';
+import Back from '../global/Back';
 
 export default function Profile() {
     return (
         <Grid container justify='center'>
             <Grid item xs={10} className="main-container">
+                <Back />
                 <h1>Profile Card</h1>
                 <Grid container alignItems='center' direction='column'>
                     <div className="profile-card-container">

@@ -5,12 +5,14 @@ import {
 } from '@material-ui/core';
 
 import './css/hover.css';
+import Back from '../global/Back';
 
 export default function Hover() {
     return (
         <Grid container justify='center'>
             <Grid item xs={10} className="main-container">
-                <h1>Hover effects</h1>
+                <Back />
+                <h1> Hover effects</h1>
                 <Grid container justify='space-evenly'>
                     <Grid item xs={3} className='hover-container'>
                         <button className='hover-underline hover-underline-left'>Hover me</button>

@@ -5,11 +5,13 @@ import {
 } from '@material-ui/core';
 
 import './css/badge.css';
+import Back from '../global/Back';
 
 export default function Badge() {
     return (
         <Grid container justify="center">
             <Grid item xs={10} className="main-container">
+                <Back />
                 <h1>Badge</h1>
                 <h2>Single</h2>
                 <Grid container alignItems='center' direction='column'>

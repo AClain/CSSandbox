@@ -1,0 +1,8 @@
+#back-arrow {
+  transition: all 0.2s ease-in;
+}
+
+#back-arrow:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

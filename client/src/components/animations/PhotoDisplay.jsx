@@ -5,11 +5,13 @@ import {
 } from '@material-ui/core';
 
 import './css/photo_display.css';
+import Back from '../global/Back';
 
 export default function PhotoDisplay() {
     return (
         <Grid container justify='center'>
             <Grid item xs={10} className="main-container">
+                <Back />
                 <h1>Photo Display</h1>
                 <Grid container justify='center'>
                     <Grid item xs={12} className="photo-top-container">

@@ -5,11 +5,13 @@ import {
 } from '@material-ui/core';
 
 import './css/feature_card.css';
+import Back from '../global/Back';
 
 export default function FeatureCard() {
     return (
         <Grid container justify='center'>
             <Grid item xs={10} className="main-container">
+                <Back />
                 <h1>Feature Cards</h1>
                 <Grid container justify='space-around'>
                     <Grid item xs={6}>
