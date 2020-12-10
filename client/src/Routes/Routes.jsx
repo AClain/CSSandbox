@@ -19,6 +19,7 @@ import Menu from '../components/animations/Menu';
 import Button from '../components/animations/Button';
 import DarkMode from '../components/animations/DarkMode';
 import Alerts from '../components/animations/Alerts';
+import TabButton from '../components/animations/TabButton';
 
 import Badge from '../components/basics/Badge';
 import Profile from '../components/basics/Profile';
@@ -26,6 +27,7 @@ import Pricing from '../components/basics/Pricing';
 import FeatureCard from '../components/basics/FeatureCard';
 import Tabs from '../components/basics/Tabs';
 import Borders from '../components/basics/Borders';
+import Timer from '../components/basics/Timer';
 
 function Routes(props) {
     return (
@@ -43,6 +45,7 @@ function Routes(props) {
                 <Route exact path='/animations/button' component={Button} />
                 <Route exact path='/animations/dark-mode' component={DarkMode} />
                 <Route exact path='/animations/alerts' component={Alerts} />
+                <Route exact path='/animations/tab-button' component={TabButton} />
 
                 <Route exact path='/basics/badge' component={Badge} />
                 <Route exact path='/basics/profile' component={Profile} />
@@ -50,6 +53,7 @@ function Routes(props) {
                 <Route exact path='/basics/feature-card' component={FeatureCard} />
                 <Route exact path='/basics/tabs' component={Tabs} />
                 <Route exact path='/basics/borders' component={Borders} />
+                <Route exact path='/basics/timer' component={Timer} />
                 <Route path='*'>
                     <Redirect to='/home' />
                 </Route>

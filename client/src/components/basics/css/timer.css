@@ -1,0 +1,22 @@
+#timer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkblue);
+  width: 450px;
+  height: 350px;
+}
+
+.time-box {
+  background-color: #fff;
+  color: var(--lightblue);
+  font-size: 28px;
+  padding: 5px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+}
+
+.timer-button {
+  margin-top: 15px;
+}

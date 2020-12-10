@@ -27,6 +27,7 @@ export default function Home() {
                     <Link className="home-link" to='/animations/button'>Button</Link>
                     <Link className="home-link" to='/animations/dark-mode'>Dark Mode</Link>
                     <Link className="home-link" to='/animations/alerts'>Alerts</Link>
+                    <Link className="home-link" to='/animations/tab-button'>Tab Button</Link>
                 </div>
                 <div>
                     <h3 className="home-list-title">Basics</h3>
@@ -36,6 +37,7 @@ export default function Home() {
                     <Link className="home-link" to='/basics/feature-card'>Feature Card</Link>
                     <Link className="home-link" to='/basics/tabs'>Tabs</Link>
                     <Link className="home-link" to='/basics/borders'>Borders</Link>
+                    <Link className="home-link" to='/basics/timer'>Timer</Link>
                 </div>
             </Grid>
         </Grid>
